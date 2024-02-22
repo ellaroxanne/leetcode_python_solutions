@@ -2,8 +2,6 @@ class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if root == None:
             return []
-        elif (root.left == None and root.right == None):
-            return [root.val]
         else:
             my_root_list = []
             my_root_list += [root.val]
